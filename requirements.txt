@@ -1,0 +1,43 @@
+# RMBG 2.0 Background Removal Project Dependencies
+# Core ML libraries
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.30.0
+
+# Image processing
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# ONNX runtime for optimized inference
+onnxruntime>=1.15.0
+
+# System monitoring
+psutil>=5.9.0
+
+# Utilities
+tqdm>=4.65.0
+requests>=2.31.0
+
+# Optional: For development and visualization
+matplotlib>=3.7.0
+
+# Model utilities
+timm>=0.9.0
+safetensors>=0.3.0
+
+# File handling
+PyYAML>=6.0
+
+# Networking
+certifi>=2023.0.0
+charset-normalizer>=3.0.0
+idna>=3.4
+urllib3>=2.0.0
+
+# Additional utilities
+filelock>=3.12.0
+huggingface-hub>=0.16.0
+packaging>=23.0
+regex>=2023.0.0
+tokenizers>=0.13.0
+typing-extensions>=4.7.0
