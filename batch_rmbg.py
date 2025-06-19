@@ -37,11 +37,12 @@ def load_model(model_path=None):
     # 检查CUDA是否可用
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
     print(f"使用设备: {device}")
-    
+    print(f"模型路径1: {model_path}")
     # 加载模型
     if model_path is None:
         model_path = "/Users/chenminglin/hf-download/RMBG-2.0"  # 本地模型路径
-    
+        
+    print(f"模型路径2: {model_path}")
     model = AutoModelForImageSegmentation.from_pretrained(
         model_path, 
         trust_remote_code=True,
