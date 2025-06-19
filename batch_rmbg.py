@@ -39,7 +39,9 @@ def load_model(model_path=None):
     print(f"使用设备: {device}")
     
     # 加载模型
-    model_path = "/Users/chenminglin/hf-download/RMBG-2.0"  # 本地模型路径
+    if model_path is None:
+        model_path = "/Users/chenminglin/hf-download/RMBG-2.0"  # 本地模型路径
+    
     model = AutoModelForImageSegmentation.from_pretrained(
         model_path, 
         trust_remote_code=True,
